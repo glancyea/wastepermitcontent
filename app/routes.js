@@ -8,4 +8,6 @@ router.get('/', function (req, res) {
 
 // add your routes here
 
+router.use('/scripts', express.static(__dirname + '/js'))
+
 module.exports = router
