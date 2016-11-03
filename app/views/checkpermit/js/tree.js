@@ -165,7 +165,7 @@ $( document ).ready(function() {
         if(items.length>1) {
           $list.append('<label for="' + item.id + '" class="block-label"><input id="' + item.id + '" type="radio" name="data-choice" value="' + item.id + '"><span class="heading-small">' + item.name + '</span>' + inputbr + item.description + '</label>');
         } else {
-          $list.append('<div class="panel panel-border-wide"><p><span class="heading-small">' + item.name + '</span>' + inputbr + item.description + '</p></div><style>#submit{display:none;}</syle>');
+          $list.append('<div class="panel panel-border-wide"><p class="heading-small">' + item.name + '</p>' + item.description + '</div><style>#submit{display:none;}</syle>');
         }
 
       }
