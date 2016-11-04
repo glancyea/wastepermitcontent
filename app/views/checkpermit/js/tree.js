@@ -137,6 +137,7 @@ $( document ).ready(function() {
     var tree = new DecisionTree(data);
     var $list = $('#choices');
     var $title = $('h1');
+    var $back = $('#back');
     var $legend = $('#legendtitle');
     var inputbr = '';
     

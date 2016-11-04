@@ -927,7 +927,7 @@ var topleveldata = {
         },
         "w22": {
            "name": "Disposal to landfill",
-           "question": "Do any of these appply to your landfill activity?",
+           "question": "Do any of these apply to your landfill activity?",
            "children": [
               "w23",
               "w24",
