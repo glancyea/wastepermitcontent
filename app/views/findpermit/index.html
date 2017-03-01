@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Find a permit: draft
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <a href="#" class="link-back" id="back">Back</a>
+  
+  <h1 class="heading-large">Find a permit</h1>
+  
+  <div id="permitlist">
+    
+    <form class="ui-filterable">
+        <input id="filterBasic-input" data-type="search">
+    </form>
+    <ul 
+    data-role="listview" 
+    data-filter="true" 
+    data-input="#filterBasic-input" 
+    data-filter-placeholder="Search"
+    >
+      
+    <li data-filtertext="Anaerobic digestion facility including use of the resultant biogas (SR2010 No15)  Biological treatment waste">Anaerobic digestion facility including use of the resultant biogas (SR2010 No15) standard rules permit</li>
+    <li data-filtertext="Anaerobic digestion facility including use of the resultant biogas (waste recovery operation) (SR2012 No 12)  Biological treatment waste">Anaerobic digestion facility including use of the resultant biogas (waste recovery operation) (SR2012 No 12) standard rules permit</li>
+    <li data-filtertext="Combustion of biogas in engines at a sewage treatment works (SR2009 No4)  Biological treatment waste">Combustion of biogas in engines at a sewage treatment works (SR2009 No4) standard rules permit</li>
+    <li data-filtertext="Composting biodegradable waste 500t (SR2010 No14)  Biological treatment waste">Composting biodegradable waste 500t (SR2010 No14) standard rules permit</li>
+    <li data-filtertext="Composting biodegradable waste in open and closed systems 500T (SR2011 No1)  Biological treatment waste">Composting biodegradable waste in open and closed systems 500T (SR2011 No1) standard rules permit</li>
+    <li data-filtertext="Composting in closed systems (in-vessel composting) 75,000t (SR2008 No17)  Biological treatment waste">Composting in closed systems (in-vessel composting) 75,000t (SR2008 No17) standard rules permit</li>
+    <li data-filtertext="Composting in closed systems (SR2012 No 3)  Biological treatment waste">Composting in closed systems (SR2012 No 3) standard rules permit</li>
+    <li data-filtertext="Composting in open systems (SR2012 No 7)  Biological treatment waste">Composting in open systems (SR2012 No 7) standard rules permit</li>
+    <li data-filtertext="Non hazardous mechanical biological (aerobic) treatment facility 75,000t (existing permits) (SR2008 No 18 )  Biological treatment waste">Non hazardous mechanical biological (aerobic) treatment facility 75,000t (existing permits) (SR2008 No 18 ) standard rules permit</li>
+    <li data-filtertext="Non-hazardous mechanical biological (aerobic) treatment facility 75,000t (SR2015 No.12)  Biological treatment waste">Non-hazardous mechanical biological (aerobic) treatment facility 75,000t (SR2015 No.12) standard rules permit</li>
+    <li data-filtertext="Non-hazardous sludge biological chemical and physical treatment site 250,000t  (SR2008 No19)  Biological treatment waste">Non-hazardous sludge biological chemical and physical treatment site 250,000t  (SR2008 No19) standard rules permit</li>
+    <li data-filtertext="Non-hazardous sludge biological chemical and physical treatment site 75,000t (SR2008 No19)  Biological treatment waste">Non-hazardous sludge biological chemical and physical treatment site 75,000t (SR2008 No19) standard rules permit</li>
+    <li data-filtertext="On-farm anaerobic digestion facility (SR2010 No16) farm Biological treatment waste">On-farm anaerobic digestion facility (SR2010 No16) standard rules permit</li>
+    <li data-filtertext="On-farm anaerobic digestion facility using farm wastes only, including use of the resultant biogas (SR2012 No 10) farm Biological treatment waste">On-farm anaerobic digestion facility using farm wastes only, including use of the resultant biogas (SR2012 No 10) standard rules permit</li>
+    <li data-filtertext="Storage and treatment of dredgings for recovery (SR2010 No18)  Biological treatment waste">Storage and treatment of dredgings for recovery (SR2010 No18) standard rules permit</li>
+    <li data-filtertext="Storage of digestate from anaerobic digestion plants (SR2010 No17)  Biological treatment waste">Storage of digestate from anaerobic digestion plants (SR2010 No17) standard rules permit</li>
+    
+    
+    
+    </ul>
+    
+
+  </div>
+
+  
+</main>
+
+
+{% endblock %}
+
+{% block custom_script %}
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+  $( ".ui-filterable" ).prepend( "<h2>Start typing to search</h2>" );
+  $( ".ui-filterable" ).append( "<p>it will search automatically</p>" );
+});
+</script>
+{% endblock %}
